@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Annunci Lavoro Sviluppatori e Developers in Italia</title>
+  <meta name="description" content="Newletter Hacking Scaling e Startup in Italia"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body id="job">
+  <header id="overview" class="hero-unit <%= action_name %>">
+    <div class="container">
+     <%= render 'layouts/header'%>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="search">
+      <%= render 'jobs/search' %>
+    </div>
+    <%= yield %>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <%= render 'layouts/footer'%>
+      </ul>
+    </div>
+  </div>
+  <%= render 'layouts/analitycs'%>
+</body>
+</html>

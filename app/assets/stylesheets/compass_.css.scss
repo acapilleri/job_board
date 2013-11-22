@@ -1,0 +1,13 @@
+@import "compass";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+#job #sharing {
+  ul { list-style:none;
+    a { &:hover{ cursor: pointer}
+       display: block;
+       height: icons-sprite-height(twitter);  width: icons-sprite-width(twitter);
+       margin:5px;
+      }
+    }
+}

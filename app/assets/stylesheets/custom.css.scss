@@ -1,0 +1,80 @@
+#logo {
+    background-color: #f73b3b;
+    color: white;
+}
+
+h1 {
+    color: #f73b3b;
+}
+
+#developer_email{
+  font-size:18px;
+}
+#job{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  text-align: left;
+  background-color: white;
+  background-image: none;
+  padding-top:50px;
+  section{ margin-left:0px}
+  h1{ color: black; }
+  h2{ text-align: left;}
+  .lead{ color: red; }
+  .hero-unit{ background-color: white; padding: 5px;}
+   #search { input[type="text"]{ width: 400px; font-size: 18px;}
+             form { margin: 0px }
+            }
+   #jobs  { margin-left:0px;
+            list-style: none;
+          }
+   .job{ text-align:left; margin-left: 0px; font-size: 15px; height: 20px; border-bottom: 1px solid #E0E0E0;
+         padding: 5px;
+         a:hover{ background: none; color: none;}
+         }
+   .is_new{ }
+   .titolo, .data, .nome{ text-transform:capitalize; }
+   .data { float: right;}
+   .azienda{ }
+   .new, .edit, .show, .preview, .register { border-bottom: 1px solid #E0E0E0;
+                        h1 { font-size: 26px }
+                        p  { font-size: 14px }
+                        img { width: 80px}
+
+                       }
+   #new_job_link {  margin-top: 10px;
+               a { color: white; &:hover { text-decoration: none; }}
+            }
+  .form-horizontal{ margin-top: 30px;}
+  #azienda { margin-top: 20px; }
+  #job_descrizione { width:600px; height:500px; }
+  a.btn, a.btn-primary { color: white;}
+  a.back:hover { background:none; text-decoration:none; }
+}
+
+#fine {
+  margin: 100px auto;
+  width: 300px;
+  text-align: center;
+  h1{ font-size: 50px; margin-bottom:20px; }
+  a {color: white }
+}
+#spot { a, a:hover {color: black; background: none; text-decoration: none}}
+#spot {  width: 50%; float: left; }
+#footer {
+          margin-top: 40px;
+          padding: 30px 0;
+          text-align: center;
+          ul { list-style: none; }
+          li {  display: inline; }
+          a {  &:hover { text-decoration: none; color: gray; background: none; }};
+}
+#sharing { width:40%; float:right; }
+
+//Tabs
+.job_steps_new #aggiungi,
+.job_steps_preview #preview,
+.registrations_new #registrati,
+.job_steps_fine #fine,
+.job_steps_edit #aggiungi
+
+{ background-color: green; }

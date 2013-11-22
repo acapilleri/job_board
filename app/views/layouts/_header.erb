@@ -1,0 +1,16 @@
+ <div id="spot">
+    <h1><%= link_to 'Annunci', root_path %></h1>
+    <p class="lead">di lavoro per sviluppatori e hacker in Italia.</p>
+  </div>
+  <div id="sharing">
+   <%= link_to root_path(format: :rss) do %>
+     <%= image_tag 'rss.png', alt: 'rss lavoro per sviluppatori e hacker itaiani', style: 'float: right'%>
+   <% end %>
+    <ul>
+      <li> <%=link_to '', "http://www.twitter.com/share?url=http://jobs.topdevelopers.it&text=Annunci Lavoro Sviluppatori e Developers in Italia", class:"icons-twitter" %></a></li>
+      <li> <%=link_to '', "http://www.facebook.com/share.php?u=http://jobs.topdevelopers.it", class:"icons-facebook" %></li>
+      <li> <%=link_to '', "http://www.linkedin.com/shareArticle?mini=true&url=http://jobs.topdevelopers.it", class:"icons-linkedin" %></li>
+      <li> <%=link_to '', "https://plus.google.com/share?url=http://jobs.topdevelopers.it", class:"icons-googleplus" %></li>
+    </ul>
+  </div>
+

@@ -1,0 +1,17 @@
+<% if action_name == 'index'  %>
+ <div class="well row">
+  <div class="span8">
+  <%= form_tag :jobs, url: root_path, method: :get, class: 'form-search' do %>
+    <%= text_field_tag :q,'',class: ' search-query', placeholder: 'Search: ruby, redis, rails, php ...' %>
+    <%= submit_tag 'Cerca', class: 'btn-large btn-success'%>
+  <% end %>
+   </div>
+
+    <div  id="new_job_link" class="span3">
+      <%=# link_to "Fai un annuncio Gratis", new_job_path, class: 'btn-large btn-danger'
+       %>
+      <%= link_to "Fai un annuncio Gratis", new_job_step_path, class: 'btn-large btn-danger' %>
+    </div>
+  </div>
+
+<% end %>

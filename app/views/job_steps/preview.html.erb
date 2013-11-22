@@ -1,0 +1,17 @@
+<%= render 'wizard' %>
+<%= render 'jobs/show'%>
+<% unless @job.new_record? %>
+  <%= link_to 'Back', jobs_path %>
+<% else %>
+  <% if current_user %>
+    <%= link_to 'Continua', fine_job_steps_path, class: 'btn btn-primary' %>
+  <% else %>
+    <%= link_to 'Continua', new_user_registration_path, class: 'btn btn-primary' %>
+  <% end %>
+  o <%= link_to 'Modifica', edit_job_step_path(@job) %>
+
+  <% unless @job.new_record? %>
+   | <%= link_to 'Cancella', @job, method: :delete, confirm: 'vuoi cancellare questo annuncio?' %>
+  <% end %>
+
+<% end %>

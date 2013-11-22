@@ -1,0 +1,7 @@
+<li class="job  span12">
+ <b class="nome"> <%= job.nome_azienda %> </b>
+  <%= link_to job do %>
+  <span class="titolo"><%= job.titolo %></span>
+  <span class="data"> <%= l job.created_at.to_date, format: :short %> </span>
+  <% end %>
+</li>

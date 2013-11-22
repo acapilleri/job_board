@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  delivery_date: 2013-11-06
+  body: MyText
+
+two:
+  delivery_date: 2013-11-06
+  body: MyText

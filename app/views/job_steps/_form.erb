@@ -1,0 +1,39 @@
+<%= form_for(@job , url: preview_job_steps_path, html: {class: 'form-horizontal'}) do |f| %>
+
+  <div class="control-group">
+    <%= f.label :titolo, class: 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :titolo %>
+    </div>
+  </div>
+
+   <div class="control-group">
+     <%= f.label :nome_azienda,  class: 'control-label'%>
+     <div class="controls">
+       <%= f.text_field :nome_azienda %>
+     </div>
+   </div>
+  <div class="control-group">
+    <%= f.label "Sito Web http://",  class: 'control-label'%>
+    <div class="controls">
+      <%= f.text_field :sito_web %>
+    </div>
+  </div>
+  <div class="control-group">
+      <%= label_tag "desc",raw('Descrizione <br/> <a href="http://daringfireball.net/projects/markdown/">puoi usare il markdown</a>'), class: 'control-label' %> <br />
+      <div class="controls">
+        <%= f.text_area :descrizione, cols: '100' %>
+      </div>
+    </div>
+  <div class="control-group">
+    <%= f.label :email, class: 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email %>
+     </div>
+  </div>
+  <div class="actions">
+    <div class="controls">
+      <%= f.submit 'Continua', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

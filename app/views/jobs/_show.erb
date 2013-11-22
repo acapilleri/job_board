@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1 id="titolo"> <%= @job.titolo %> </h1>
+
+<div id="data" > <%= l (@job.created_at || DateTime.now).to_date, format: :short %> </div>
+
+<section id="azienda">
+ <h3 id="nome_azienda">  <%= @job.nome_azienda %> </h3>
+ <h3 id="nome_azienda">  <%= link_to "http://#{@job.sito_web}", "http://#{@job.sito_web}"  %> </h3>
+</section>
+
+
+<section id="description">
+<p>
+ <%= mark_down @job.descrizione %>
+</p>
+</section>
+
+<p>
+<%= @job.email %>
+</p>

@@ -1,0 +1,21 @@
+<ul id="steps" class="breadcrumb <%= "#{controller_name}_#{action_name}"%> ">
+  <li>
+    <span id="aggiungi" class="badge">1</span>
+    <span><%= action_name == 'new' ? "Aggiungi" : "Modifica" %> </span>
+    <span class="divider">|</span>
+  </li>
+  <li>
+    <span id="preview" class="badge">2</span>
+    <span>Preview</span>
+    <span class="divider">|</span>
+  </li>
+  <li>
+    <span id="registrati" class="badge">3</span>
+    <span>Registrati</span>
+    <span class="divider">|</span>
+  </li>
+  <li>
+     <span id="fine" class="badge">4</span>
+     <span>Fine</span>
+   </li>
+</ul>

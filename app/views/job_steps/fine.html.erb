@@ -1,0 +1,9 @@
+<%= render 'wizard' %>
+
+<div id="fine">
+  <h1>Complimenti!</h1>
+  <p><%= flash[:notice] %></p>
+  <p>
+    <%= link_to "Vai alla lista Annunci", root_path, class: "btn btn-primary btn-large btn-success" %>
+  </p>
+</div>

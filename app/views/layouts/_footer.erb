@@ -1,0 +1,9 @@
+<li><%= link_to 'Home', root_path %></li>
+<li class="muted">·</li>
+<li><%= link_to 'Perchè questa bacheca', perche_path %></li>
+<li class="muted">·</li>
+<li><%= link_to 'Account', jobs_path(my_jobs: true) %></li>
+<li class="muted">·</li>
+<li><%= link_to 'rss', root_path(format: :rss) %></li>
+<li class="muted">·</li>
+<li><%= mail_to "topdevelopers.it@gmail.com", 'email' %></li>
