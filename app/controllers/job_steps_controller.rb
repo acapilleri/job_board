@@ -7,10 +7,10 @@ class JobStepsController < ApplicationController
 
   def edit
     @job = if job.present?
-        Job.new job
-      else
-       current_user.jobs.find(params[:id])
-      end
+      Job.new job
+    else
+      current_user.jobs.find(params[:id])
+    end
   end
 
   def preview
@@ -24,13 +24,13 @@ class JobStepsController < ApplicationController
   end
 
   def fine
-   @job = current_user.jobs.build job
-   if @job.save
-     flash[:notice] = "operazione eseguita con successo"
-     delete_job
-   else
-     redirect_to new_job_step_path
-   end
+    @job = current_user.jobs.build job
+    if @job.save
+      flash[:notice] = "operazione eseguita con successo"
+      delete_job
+    else
+      redirect_to new_job_step_path
+    end
   end
 
   private

@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20131120113159) do
 
-  create_table "developers", force: true do |t|
-    t.text     "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "jobs", force: true do |t|
     t.string   "titolo"
     t.text     "descrizione"
@@ -32,15 +26,7 @@ ActiveRecord::Schema.define(version: 20131120113159) do
 
   add_index "jobs", ["created_at"], name: "created_at_index", using: :btree
   add_index "jobs", ["nome_azienda"], name: "nome_azienda_index", using: :btree
-  add_index "jobs", ["titolo"], name: "title_index", using: :btree
   add_index "jobs", ["titolo"], name: "titolo_index", using: :btree
-
-  create_table "newsletters", force: true do |t|
-    t.date     "delivery_date"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

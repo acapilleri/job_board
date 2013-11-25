@@ -1,7 +1,6 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, only: [:create, :edit, :update, :destroy]
-#  before_filter :admin!, except: [:index, :show, :perche]
 
   def index
     @jobs = jobs
